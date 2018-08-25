@@ -27,7 +27,9 @@ class Chat extends Component {
         this.setState({ currentUser })
         console.log('Doing Doing 🤖 You are connected to ChitChat')
         return currentUser.subscribeToRoom({
-          roomId: 14660785, 
+          roomId: 14660785,
+          messageLimit: 100,
+          
       })
       .catch(error => console.error('error', error))
   }

@@ -29,7 +29,7 @@ class Chat extends Component {
         return currentUser.subscribeToRoom({
           roomId: 14660785,
           messageLimit: 100,
-          
+          hooks: {
       })
       .catch(error => console.error('error', error))
   }

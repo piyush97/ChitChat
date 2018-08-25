@@ -23,7 +23,8 @@ class App extends Component {
       .then(data => {
         this.setState({
           currentId: data.id,
-          currentUsername: data.name
+          currentUsername: data.name,
+          currentScreen: 'chat'
         })
       })
       .catch(error => {

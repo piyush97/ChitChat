@@ -2,10 +2,13 @@
 
 import React, { Component } from 'react'
 import { ChatManager, TokenProvider } from '@pusher/chatkit'
+import MessageList from './MessageList'
 
 class Chat extends Component {
   state = {
-    currentUser: null
+    currentUser: null,
+    currentRoom: {},
+    messages: []
   }
 
   componentDidMount() {

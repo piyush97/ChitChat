@@ -36,6 +36,7 @@ class Chat extends Component {
                    })
               }
             }
+          })
       })
       .catch(error => console.error('error', error))
   }

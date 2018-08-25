@@ -33,8 +33,12 @@ class App extends Component {
   }
 
   render() {
-    return <UsernameForm handleSubmit={this.onUsernameSubmitted} />
+    if (this.state.currentScreen === 'usernameForm') {
+      return <UsernameForm handleSubmit={this.onUsernameSubmitted} />  
+    }
+    if (this.state.currentScreen === 'chat') {
+      return <Chat currentId={this.state.currentId} />
+    }
   }
 }
-
 export default App

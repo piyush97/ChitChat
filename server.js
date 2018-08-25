@@ -33,7 +33,7 @@ app.post('/users', (req, res) => {
     })
     .catch(error => {
       if (error.error === 'services/chatkit/user_already_exists') {
-        console.log('User already exists ', user.name)
+        console.log('User already exists ' + user.name + ' What man!')
         res.status(201).json(user)
       } else {
         console.error(error)

@@ -46,8 +46,10 @@ class Chat extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Chat Screen</h1>
+      <div className='wrapper'>
+        <div className='chat'>
+        <MessageList messages={this.state.messages}/>
+        </div>
       </div>
     )
   }

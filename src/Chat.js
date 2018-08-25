@@ -50,6 +50,7 @@ class Chat extends Component {
       roomId: this.state.currentRoom.id
     })
   }
+
   render() {
     return (
       <div className='wrapper'>

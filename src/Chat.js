@@ -55,6 +55,7 @@ class Chat extends Component {
       <div className='wrapper'>
         <div className='chat'>
         <MessageList messages={this.state.messages}/>
+        <SendMessageForm onSend={this.onSend}/>
         </div>
       </div>
     )

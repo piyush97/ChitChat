@@ -35,6 +35,7 @@ class Chat extends Component {
                   messages: [...this.state.messages, message]
                    })
               }
+            }
       })
       .catch(error => console.error('error', error))
   }

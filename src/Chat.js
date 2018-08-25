@@ -33,6 +33,7 @@ class Chat extends Component {
             onNewMessage: message => {
                 this.setState({
                   messages: [...this.state.messages, message]
+                   })
       })
       .catch(error => console.error('error', error))
   }

@@ -38,6 +38,7 @@ class Chat extends Component {
             }
           })
         })
+         .then(currentRoom => {
       })
       .catch(error => console.error('error', error))
   }

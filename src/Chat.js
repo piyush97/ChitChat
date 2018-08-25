@@ -26,6 +26,7 @@ class Chat extends Component {
       .then(currentUser => {
         this.setState({ currentUser })
         console.log('Doing Doing 🤖 You are connected to ChitChat')
+        return currentUser.subscribeToRoom({
       })
       .catch(error => console.error('error', error))
   }

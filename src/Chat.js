@@ -30,6 +30,7 @@ class Chat extends Component {
           roomId: 14660785,
           messageLimit: 100,
           hooks: {
+            onNewMessage: message => {
       })
       .catch(error => console.error('error', error))
   }

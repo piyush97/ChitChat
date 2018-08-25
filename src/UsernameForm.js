@@ -34,9 +34,10 @@ class UsernameForm extends Component {
             />
           </div>
           <div>
-            <Button color="blue" type="submit">
-              Submit
+           <center><Button color="blue" type="submit">
+              Submit Username
             </Button>
+            </center>
           </div>
         </form>
       </div>

@@ -2,11 +2,13 @@
 
 import React, { Component } from 'react'
 import UsernameForm from './UsernameForm'
+import Chat from './Chat'
 
 class App extends Component {
   state = {
     currentUsername: null,
-    currentId: null
+    currentId: null,
+    currentScreen: 'usernameForm'
   }
 
   onUsernameSubmitted = username => {

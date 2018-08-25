@@ -31,6 +31,7 @@ class Chat extends Component {
           messageLimit: 100,
           hooks: {
             onNewMessage: message => {
+                this.setState({
       })
       .catch(error => console.error('error', error))
   }

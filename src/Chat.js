@@ -44,7 +44,12 @@ class Chat extends Component {
       })
       .catch(error => console.error('error', error))
   }
-
+  onSend = text => {
+    this.state.currentUser.SendMessageForm({
+      text,
+      roomId: this.state.currentRoom.id
+    })
+  }
   render() {
     return (
       <div className='wrapper'>
